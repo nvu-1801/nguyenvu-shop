@@ -1,0 +1,368 @@
+<!-- 
+    THỰC HÀNH
+    Thực hành số 1:
+     https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+    
+     1. Phân tích:
+        1. Header 
+        2. Silder
+        3. Content:
+           1. About
+           2. Tour
+           3. Contact
+           4. Image
+        4. Footer
+    2. Dựng base (xây dựng)
+    3. Xây dựng từng phần phân tích
+    4. Hoàn thiện. 
+
+ -->
+
+ <!-- Các phím tắt thường dùng :
+   1. Ctrl + D = để select từng nhánh khi bôi đen.
+   2. Ctrl + Shift + L = để select all nhánh đc bôi đen.
+   3. Ctrl + Shift + -> = để select chữ tiếp theo
+   4. nháy chuột giữ phím Alt để select con trỏ chuột tới dòng tiếp theo
+
+  -->
+
+  <!-- 
+   Đặt một số câu hỏi khi demo :
+   1. vị trí
+   2. kích thước 
+   3. Màu sắc 
+   4. kiểu dáng
+   -->
+
+   <!-- 
+      Nguyên Tắc làm web:
+      1. Từ ngoài vào trong.
+      2. Từ trên xuống dưới.
+      3.Từ tổng quan đến chi tiết.
+
+    -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> NguyenVu - Shop</title>
+   <title>Document</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/font -icon/themify-icons-font (1)/themify-icons/themify-icons.css">
+   <link rel="icon" type="x-icon/Image" href="/W3-Practive1/assets//img/Logoweb.jpg">
+</head>
+ <body>
+    <div id="main">
+         <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+               <li><a href="">trang chủ</a></li>
+               <li><a href="#iphone">iphone</a></li>
+               <li><a href="#MacBook-Air">MacBook Air</a></li>
+               <li><a href="#contact">contact</a></li>
+               <li>
+                  <a href="">Phụ Kiện 
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                  </a>
+                  <ul class="subnav">
+                     <li><a href="https://gearvn.com/pages/pc-gvn">PC</a></li>
+                     <li><a href="https://gearvn.com/search?q=ph%C3%ADm%20c%C6%A1">Bàn Phím</a></li>
+                     <li><a href="https://www.thegioididong.com/dong-ho-thong-minh">Smartwatch</a></li>
+                     <li><a href="https://www.thegioididong.com/loa-laptop?key=loa&sc=new">Loa</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Begin: Seach button -->
+            <div class="search-button">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <!-- End: Seach button -->
+
+         </div>
+
+         
+      <!-- <div  class="marquee">
+         <marquee behavior="scroll" direction="left"> <a class="ads" href="https://www.facebook.com/vu.1801">Welcome to NguyenVu-Shop 😍</a></marquee> 
+      </div>  -->
+      
+         <div  id="slider">
+            <!-- Quảng cáo -->
+            <div class="text-content"> 
+               <h2 class="text-heading">iPhone 15 Series</h2>
+               <div class="text-descirption">iPhone 15 Series has extremely unique and artistic 4K quality</div>
+            </div>
+
+         </div>
+       
+
+         <div id="content">
+            <!-- iphone 15 section -->
+            <div id="iphone" class="content-section">
+               <h2 class="section-heading">iPhone 15 Pro Max</h2>
+               <p class="section-sub-heading">Giới thiệu iPhone 15</p> 
+               <p class="about-text">
+                  Sau thời gian dài chờ đợi thì những sản phẩm hot nhất hành tinh cũng được Apple cho ra mắt, ấn tượng với vẻ ngoài, nổi bật về thiết kế và mạnh mẽ về hiệu năng, iPhone 15 Series đã thu hút được một lượng cực lớn người dùng yêu thích nó.Đặc biệt năm nay dòng sản phẩm này còn nhận được nâng cấp màn hình và những tính năng cao cấp khác, không chỉ cho phiên bản Pro mà còn nâng cấp nhiều cho phiên bản tiêu chuẩn và Plus. Điều đó khiến cho toàn dòng iPhone 15 Series cực được hoan nghênh.
+               </p>
+
+               <div class="iphone15-list">
+                  <!-- Sản phẩm -->
+                  <div class="iphone15-item">                 
+                  <img class="iphone15-img" src="https://cdn.tgdd.vn/Products/Images/42/240259/TimerThumb/iphone-14-(60).jpg" alt="iphone15-img">
+                  <h4 class="iphone15-name"> iphone13 </h4>
+                  <div>
+                     <del style="color: red;"> $10.00</del>
+                  </div>
+                  <div> Fee: $5.000</div>
+
+               </div> 
+               <div class="iphone15-item">
+                  <img class="iphone15-img" src="https://cdn.tgdd.vn/Products/Images/42/289702/TimerThumb/iphone-14-pro-max-512gb-(50).jpg" alt="iphone15-img">
+                  <h4 class="iphone15-name"> iphone14 128GB</h4>
+                  <div>
+                     <del style="color: red;">: $20.00</del>
+                  </div>
+                  <div> Fee: $5.000</div>
+                  
+               </div>
+               <div class="iphone15-item">
+                  <img class="iphone15-img" src="/W3-Practive1/assets/img/iphone15/iphone-15-(8).jpg" alt="iphone15-img">
+                  <h4 class="iphone15-name"> iphone15 Plus</h4>
+                  <div>
+                     <del style="color: red;"> $28.00</del>
+                  </div>
+                  <div> Fee: $15.000</div>
+                  
+               </div>
+
+               <div class="iphone15-item">
+                  <img class="iphone15-img" src="https://cdn.tgdd.vn/Products/Images/42/305660/TimerThumb/iphone-15-pro-max-1tb-(8).jpg" alt="iphone15-img">
+                  <h4 class="iphone15-name"> iphone15 1TG</h4>
+                  <div>
+                     <del style="color: red;"> $30.00</del>
+                  </div>
+                  <div> Fee: $5.000</div>
+                  
+               </div>
+               <div class="clear"></div>
+
+
+               </div>
+               
+
+            </div>
+
+             <!-- mac section -->
+             <div id="MacBook-Air" class="mac-section"> 
+             <div class="content-section">
+               <h2 class="section-heading text-white">MacBook Air</h2>
+               <p class="section-sub-heading text-white">Apple có các dòng Mac nổi bật và số lượng sản phẩm !</p> 
+            
+               <ul class="mac-list">
+                  <li>MacBook Air M1 (2020) : <span class="sold-out">sold-out</span></li>
+                  <li>MacBook Air M2 (2022) : <span class="sold-out">sold-out</li>
+                  <li>MacBook Air M2 Pro/Max (2023) : <span class="quantity">99</li>
+               </ul>
+            
+         </div> 
+
+         <!-- Mac Product -->
+
+         <div class="mac-product">
+            <div class="mac-item">
+               <img class="mac-img" src="/W3-Practive1/assets/img/Mac/MacBook Air M1 (2020) .jpg" alt="MacBook Air M1 (2020) " >
+               <div class="mac-body">
+                  <h2 class="mac-heading">MacBook Air 13 inch M1 2020 7-core GPU</h2>
+                  <div class="mac-compare">
+                     <span>RAM 8 GB</span>
+                     <span>SSD 256 GB</span>
+                  </div>
+                  <p class="mac-item-txt-online">
+                     <i></i>Online giá rẻ quá
+                  </p>
+                  <del class="mac-price-old"> 27.590.000₫</del>
+                  <div class="mac-price">  25.990.000₫</div>
+                  <div class="mac-rating">
+                     <p>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                     </p>
+                     <p class="mac-rating-total">:224</p>
+                  </div>
+                  <button class="mac-buy-product js-mac-buy-product"> Mua Ngay </button>
+               </div>
+            </div>
+
+            <div class="mac-item">
+               <img class="mac-img" src="/W3-Practive1/assets/img/Mac/MacBook Air M2 .jpg" alt="MacBook Air M1 (2020) ">
+               <div class="mac-body">
+                  <h2 class="mac-heading">MacBook Air 13 inch M1 2020 7-core GPU</h2>
+                  <div class="mac-compare">
+                     <span>RAM 8 GB</span>
+                     <span>SSD 256 GB</span>
+                  </div>
+                  <p class="mac-item-txt-online">
+                     <i></i>Online giá rẻ quá
+                  </p>
+                  <del class="mac-price-old"> 19.590.000₫</del>
+                  <div class="mac-price">  18.990.000₫</div>
+                  <div class="mac-rating">
+                     <p>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                     </p>
+                     <p class="mac-rating-total">: 124</p>
+                  </div>
+                  <button class="mac-buy-product js-mac-buy-product"> Mua Ngay</button>
+               </div>
+            </div>
+
+            <div class="mac-item">
+               <img class="mac-img" src="/W3-Practive1/assets/img/Mac/MacBook Air M2 Pro Max .jpg" alt="MacBook Air M1 (2020) ">
+               <div class="mac-body">
+                  <h2 class="mac-heading">MacBook Air 13 inch M1 2020 7-core GPU</h2>
+                  <div class="mac-compare">
+                     <span>RAM 8 GB</span>
+                     <span>SSD 256 GB</span>
+                  </div>
+                  <p class="mac-item-txt-online">
+                     <i></i>Online giá rẻ quá
+                  </p>
+                  <del class="mac-price-old"> 40.590.000₫</del>
+                  <div class="mac-price">  35.999.000₫</div>
+                  <div class="mac-rating">
+                     <p>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                        <i class="ti-star"></i>
+                     </p>
+                     <p class="mac-rating-total">: 300</p>
+                  </div>
+                  <button class="mac-buy-product js-mac-buy-product"> Mua Ngay </button>
+               </div>
+            </div>
+
+
+
+         <div class="clear"></div>
+         </div>
+
+      </div>
+
+
+
+         <!-- Begin: Contact section -->
+            <div id="contact">
+               <div class="content-section">
+                  <h2 class="section-heading">CONTACT</h2>
+                  <p class="section-sub-heading">Tổng đài hỗ trợ trực tiếp !</p> 
+                  
+               <div class="row contact-content">
+                  <div class="col col-half contact-info">
+                     <p><i class="ti-location-pin"> Location: Quy Nhơn, Bình Định </i></p>
+                     <p><i class="ti-mobile"> Phone:  +84 34356789 </i></p>
+                     <p><i class="ti-email"> Email: vupnqe180156@fpt.edu.vn </i></p>
+                     <p><i class="ti-facebook"> Facebook: https://www.facebook.com/vu.1801 </i></p>
+                     <p class="thank-contact"><i class="ti-heart"> Thank you for trusting our shop !</i></p>
+
+                  </div>
+                  <div class="col col-half contact-form">
+                     <form action="">
+                        <div class="row">
+                           <div class="col col-half ">
+                              <input type="text" name="" placeholder="Name.." required id="" class="form-control">
+                           </div> 
+                           <div class="col col-half">
+                              <input type="email" name="" placeholder="Email.."required id="" class="form-control">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col col-full">
+                              <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                           </div>
+                        </div>
+                        <input class="form-submit-btn" type="submit" value="SEND">
+                     </form>
+                  </div>
+               </div>
+            </div>   
+
+            
+
+         </div>
+         <!-- End: Contact section -->
+
+
+         <div id="footer">
+            <div class="social-list">
+               <a href="#"><i class="ti-facebook" ></i></a>
+               <a href="#"><i class="ti-instagram" ></i></a>
+               <a href="#"><i class="ti-youtube" ></i></a>
+               <a href="#"><i class="ti-twitter" ></i></a>
+               <a href="#"><i class="ti-apple" ></i></a>
+               <a href="#"><i class="ti-html5" ></i></a>
+               <a href="#"><i class="ti-css3" ></i></a>
+            </div>
+            
+            <p class="copyright">Design by <a href="https://www.facebook.com/vu.1801">vu.1801</a> </p>
+         </div>
+
+        <div> 
+        </div>
+    
+   
+    <!-- Modal -->
+    <div class="modal js-mac-modal">
+
+      <div class="modal-container js-mac-container">
+         <div class="modal-close js-mac-close">
+            <i class="ti-close"></i>
+         </div>
+
+         <div class="modal-heading">
+            <i class="modal-heading-icon ti-apple">
+               CART
+            </i>
+         </div>
+   
+         <div class="modal-body">
+            <label for="modal-quantity" class="modal-label">
+               <i class="ti-shopping-cart"></i>
+               MacBook Air , 2.000 $ for one product
+            </label>
+            <input id="modal-quantity" type="text" class="modal-input" placeholder="How many...?">
+            
+            <label for="modal-email" class="modal-label">
+               <i class="ti-email"></i>
+               Send to
+            </label>
+            <input id="modal-email" type="text" class="modal-input" placeholder="Enter email...">
+       
+            <button class="buy-product">
+               pay <i class="ti-check"></i>
+            </button>
+         </div>
+   
+         <div class="modal-footer">
+            <p class="modal-help"> 
+               Need <a href="#">help ?</a>
+            </p>
+         </div>
+      </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+ </body>
+ </html>

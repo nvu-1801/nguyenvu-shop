@@ -1,0 +1,674 @@
+/* Reset CSS  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+
+.row {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.row::after {
+    content: "";
+    display: block;    
+    clear: both;   
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #000;
+    border-inline-end: border-box;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+
+#nav li {
+        position:  relative;
+        
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 10px;
+    border-radius: 5px ;
+    border-inline-end: border-box;
+    display: block;
+   
+}
+
+#nav li:hover .subnav {
+    display: block;
+   
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+    
+}
+
+#nav .subnav {
+    top: 100%;
+    left: 0;
+    min-width: 110px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    
+    
+}
+#nav .subnav a {
+    color: #000;
+    line-height: 38px; 
+    
+}
+
+#nav .nav-arrow-down {
+    font-size:13px;
+    
+}
+
+#header .search-button {
+     float: right;
+     padding: 0 23px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+ 
+
+#slider{
+    
+    margin: 70px 25px;
+    padding-top: 50%; 
+    border-radius: 5px;
+    border: 10px solid #ccc;
+    position: relative;
+    background-image: top center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.mobilecity.vn/mobilecity-vn/images/2023/09/iphone-15.jpg.webp');
+    
+}
+
+/* .marquee > a {
+    position: absolute;
+    bottom: 150px;
+    text-decoration: none;
+    color: rgba(123, 167, 223, 2);
+    font-size: 16px;
+  } */
+
+#slider .text-content{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%);
+    bottom: 40px;
+    left: 50%;
+    width: 100%; 
+}
+
+#slider .text-heading{
+     font-weight: 600;
+     font-size: 30px;
+}
+
+#slider .text-heading:hover {
+    color: rgb(249, 204, 57);
+}
+
+#slider .text-descirption{
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+
+#content{
+   height: 2000px;
+}
+
+#content .content-section {
+   width: 800px;
+   padding: 64px 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+#content .section-heading:hover {
+    color: rgb(249, 204, 57);
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+#content .iphone15-list {
+    margin-top: 25px;
+    
+    
+}
+
+#content .iphone15-item {
+    float: left;
+    text-align: center;
+    border: 1px solid gray;
+    margin: 20px 0px; 
+    width: calc(100% /4 );
+    border-radius: 5px;
+    opacity: 0.8;
+
+}
+
+#content .iphone15-item:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);  
+}
+
+#content .iphone15-img {
+    width: 150px;
+    padding: 10px;
+   
+}
+
+#content .iphone15-name {
+    font-size: 15px;
+
+}
+
+
+
+/* Mac section */
+
+.mac-section {
+    background-color: #000;
+}
+
+.mac-list {
+    background-color: #fff;
+    margin-top: 60px;
+    list-style: none;   
+    line-height: 25px;
+}
+
+.mac-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+.mac-list .sold-out {
+    background-color: #f44336;
+    color: #ccc;
+    font-size: 15px;
+    padding: 2px 4px;
+    margin-left: 16px;
+}
+
+.mac-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 24px;
+
+}
+
+/* Mac Product */
+
+.mac-product{
+   padding-bottom: 100px;
+   margin: 0px 170px 100px;
+   background-color: #000;
+   
+} 
+
+.mac-item{
+    float: left;
+    width: 30.3333%;
+    padding: 16px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 7px;
+    margin-left: 18px;
+    background-color: #fff;
+}
+
+/* .mac-item:hover {
+      text-shadow: 0 0 5px rgba(237, 128, 243, 0.6);
+}  */
+
+
+
+.mac-img{
+    width: 100%;
+    display: block;
+    opacity: 0.8;
+}
+.mac-item:hover .mac-img {
+    opacity: 1;
+    transform: translateY(-5px); 
+  }
+
+
+.mac-body{
+    font-size: 15px;
+    padding: 6px ;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.mac-body:hover .mac-heading {
+    color: rgb(218, 173, 25);
+
+}
+
+.mac-heading{
+    color: #000;
+    font-weight: 600;
+}
+
+
+.mac-compare span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 5px;
+    padding: 4px 5px;
+    white-space: nowrap;
+    background-color: #1002;
+}
+
+.mac-item-txt-online>i {
+    width: 15px;
+    height: 15px;
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC) no-repeat left center;
+    background-size: 15px 15px;
+    margin: -3px 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  
+
+}
+
+.mac-price-old{
+    padding-top: 5px; 
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
+
+}
+
+.mac-price{
+    color: #e83a45;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.mac-rating  {
+    display: flex;
+}
+
+
+.mac-rating > i {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mac-rating-total {
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.mac-buy-product {
+    padding: 4px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 550;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mac-buy-product:hover {
+    color: #fff;
+    background-color: #e83a45;
+    border: 2px solid #ccc;
+}
+
+
+/* Contact section */
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 8px;
+
+}
+
+.contact-info i[class*="ti-"] {
+    /* width: 30px; */
+    display: inline-block;
+
+}
+
+.contact-form .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.contact-form .form-submit-btn {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 4px 10px;
+    font-weight: 550;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #e83a45;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+} 
+
+
+
+/* footer */
+#footer{
+    padding: 80px 16px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#footer .social-list {
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+#footer .social-list > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    transition: transform .2s, color .2s; /* Thêm transition cho color */
+}
+
+#footer .social-list > a:hover {
+    color: #f44336; /* Đặt màu mới trước transform để tránh việc màu bị override */
+    transform: scale(1.7);
+}
+
+
+#footer .thank-contact {
+    padding: 10px 8px;
+}
+
+#footer .copyright {
+    margin-top: 10px;
+}
+
+#footer .copyright a {
+    font-weight: 600;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+#footer .copyright > a:hover {
+    color: #f44336
+}
+
+/* modal */
+
+.modal.open {
+    display: flex;
+}
+
+ 
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+
+.modal-container{
+    background-color: white;
+    width: 800px;
+    margin-top: 30px;
+    max-width: calc(100% -40px);
+    min-height: 120px; 
+    border-radius: 5px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s ;
+}
+
+
+.modal-heading{
+    background-color: #009688;
+    height: 130px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.modal-heading-icon{
+    text-transform: uppercase;
+    margin-right: 16px;
+}
+
+.modal-heading-icon:hover{
+    color: rgb(247, 218, 4);
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    background-color: #e83a45;
+}
+
+
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.buy-product{
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.buy-product:hover {
+    opacity: 0.8;
+    color: rgb(247, 218, 4);
+    cursor: pointer;
+}
+
+.modal-help{
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-help>a {
+    color: #009688;
+}
+
+.modal-help>a:hover {
+    color: #f44336;
+}
+
+@keyframes modalFadeIn {
+    from { 
+        opacity: 1;
+        transform: translateY(-140px);
+    }
+
+    to {    
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
